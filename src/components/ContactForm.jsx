@@ -18,7 +18,7 @@ const ContactForm = () => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length === 0) {
-      alert('Form submitted (demo only)');
+      alert('Form submitted');
       setForm({ name: '', email: '', company: '', licenseType: '', message: '' });
       setErrors({});
     } else {
